@@ -31,6 +31,11 @@ modules:
         - yt-dlp
         - virt-manager
 
+  - type: dnf
+    install:
+      packages:
+        - https://github.com/patryk-ku/music-discord-rpc/releases/latest/download/music-discord-rpc.rpm
+
   - type: default-flatpaks
     configurations:
       - notify: true
