@@ -1,43 +1,32 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# FoundryOS &nbsp; [![bluebuild build badge](https://github.com/23sonics/foundryos-2/actions/workflows/build.yml/badge.svg)](https://github.com/23sonics/foundryos-2/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+A customised image, managed with [BlueBuild](https://blue-build.org) and built on top of [Universal Blue's](https://universal-blue.org/) Fedora Kinoite base image with a selection of the packages I use daily
 
 ## Installation
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+### On the topic of ISOs
+I will *never* host any ISOs as I don't have the resources to do this for an image that's made for my own personal use anyway. Despite this, existing experienced Linux users may try following [BlueBuild's own guide](https://blue-build.org/how-to/generate-iso/) on how to generate an ISO
 
-To rebase an existing atomic Fedora installation to the latest build:
+### Rebasing an existing installation
+If you already use Fedora Kinoite or a derivative, you could try to rebase your system. The specific method depends on your setup but the following steps should work for those using `rpm-ostree` (adapted from [BlueBuild's guide](https://blue-build.org/learn/universal-blue/#by-rebasing-from-an-existing-installation-of-fedora-atomic-or-a-derivative) (again))
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+Start by rebasing to an unsigned image...
+```
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/23sonics/foundryos-2:latest
+sudo systemctl reboot
+```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+...then finish up by rebasing to the signed version:
+```
+sudo rpm-ostree rebase ghcr.io/23sonics/foundryos-2:latest
+sudo systemctl reboot
+```
 
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+> [!IMPORTANT]
+> I am not liable for any issues this may cause, do not expect any support from me for this method
 
 ## Verification
-
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
-
-```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+These images are signed by [Sigstore's](https://www.sigstore.dev/) [cosign](https://github.com/sigstore/cosign). To verify this image's signature, download `cosign.pub` from this repository, make sure to install cosign and run the following in a terminal:
+```
+cosign verify --key cosign.pub ghcr.io/23sonics/foundryos-2
 ```
