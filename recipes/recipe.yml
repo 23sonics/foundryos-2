@@ -30,6 +30,8 @@ modules:
         - ffmpeg
         - yt-dlp
         - virt-manager
+        - kcalc
+        - kolourpaint
 
   - type: dnf
     install:
