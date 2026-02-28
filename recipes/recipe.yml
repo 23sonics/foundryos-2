@@ -32,6 +32,13 @@ modules:
         - virt-manager
         - kcalc
         - kolourpaint
+        - soundkonverter
+    replace:
+      - from-repo: updates
+        packages:
+          - old: sddm
+            new: plasma-login-manager
+        allow-erasing: true
 
   - type: dnf
     install:
