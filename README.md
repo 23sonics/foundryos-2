@@ -4,7 +4,7 @@ A customised image, managed with [BlueBuild](https://blue-build.org) and built o
 
 ## Installation
 > [!WARNING]
-> I will not provide support for this image to anyone other than myself, if you want to try to install this image yourself then you do so at your own risk, proceed at your own discretion.
+> I will not provide support for this image to anyone other than myself. If you want to try to install this image anyway, proceed at your own discretion.
 
 ### On the topic of ISOs
 I will *never* host any ISOs as I don't have the resources to do this for an image that's made for my own personal use anyway. Despite this, existing experienced Linux users may try following [BlueBuild's own guide](https://blue-build.org/how-to/generate-iso/) on how to generate an ISO, although this is not guaranteed to work properly
