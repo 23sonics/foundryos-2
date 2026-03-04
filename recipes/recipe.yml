@@ -57,7 +57,5 @@ modules:
           - org.kde.kasts
           - org.atheme.audacious
           - org.fedoraproject.MediaWriter
-      - notify: false
-        scope: user
 
   - type: signing
