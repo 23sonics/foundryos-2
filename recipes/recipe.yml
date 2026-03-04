@@ -26,6 +26,7 @@ modules:
       nonfree: negativo17
     install:
       packages:
+        - webkit2gtk4.1
         - steam
         - ffmpeg
         - yt-dlp
