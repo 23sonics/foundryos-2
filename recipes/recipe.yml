@@ -27,6 +27,11 @@ modules:
     install:
       packages:
         - webkit2gtk4.1
+        - gwenview
+        - haruna
+        - audacious
+        - kasts
+        - k3b
         - steam
         - ffmpeg
         - yt-dlp
@@ -36,6 +41,7 @@ modules:
         - kolourpaint
         - soundkonverter
         - ckb-next
+        - mediawriter
     replace:
       - from-repo: updates
         packages:
@@ -50,12 +56,7 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true
+      - notify: false
         scope: system
-        install:
-          - org.kde.haruna
-          - org.kde.kasts
-          - org.atheme.audacious
-          - org.fedoraproject.MediaWriter
 
   - type: signing
