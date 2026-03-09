@@ -31,6 +31,8 @@ modules:
         - haruna
         - audacious
         - kasts
+        - libburn
+        - cdrskin
         - k3b
         - steam
         - ffmpeg
@@ -42,6 +44,7 @@ modules:
         - soundkonverter
         - ckb-next
         - mediawriter
+        - nextcloud-client
     replace:
       - from-repo: updates
         packages:
