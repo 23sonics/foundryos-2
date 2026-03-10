@@ -44,7 +44,6 @@ modules:
         - soundkonverter
         - ckb-next
         - mediawriter
-        - nextcloud-client
     replace:
       - from-repo: updates
         packages:
