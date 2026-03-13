@@ -38,7 +38,7 @@ modules:
         - ffmpeg
         - yt-dlp
         - virt-manager
-        - thunderbird
+        - kontact
         - kcalc
         - kolourpaint
         - soundkonverter
