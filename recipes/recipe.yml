@@ -41,7 +41,6 @@ modules:
         - kontact
         - kcalc
         - kolourpaint
-        - soundkonverter
         - ckb-next
         - mediawriter
     replace:
