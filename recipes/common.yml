@@ -16,10 +16,7 @@ modules:
     install:
       packages:
         - webkit2gtk4.1
-        - gwenview
-        - haruna
         - audacious
-        - kasts
         - libburn
         - cdrskin
         - k3b
@@ -27,17 +24,9 @@ modules:
         - ffmpeg
         - yt-dlp
         - virt-manager
-        - kontact
-        - kcalc
         - kolourpaint
         - ckb-next
         - mediawriter
-    replace:
-      - from-repo: updates
-        packages:
-          - old: sddm
-            new: plasma-login-manager
-        allow-erasing: true
 
   - type: dnf
     install:
