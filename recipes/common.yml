@@ -1,18 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
-name: foundryos-2
-description: customised Fedora Kinoite image for my own personal use
-
-base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 43
-
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: /
-
   - type: dnf
     repos:
       nonfree: rpmfusion

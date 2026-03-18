@@ -1,0 +1,16 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+name: foundryos-gnome
+description: customised Fedora Kinoite image for my own personal use (GNOME variant)
+
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: 43
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - from-file: common.yml
