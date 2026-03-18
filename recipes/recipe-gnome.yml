@@ -13,4 +13,25 @@ modules:
       - source: system
         destination: /
 
+  - type: dnf
+    install:
+      packages:
+        - papers
+        - showtime
+        - gnome-calculator
+        - loupe
+        - baobab
+        - gnome-clocks
+        - gnome-maps
+        - gnome-calendar
+        - gnome-contacts
+        - gnome-text-editor
+        - gnome-connections
+        - gnome-extensions-app
+        - gnome-logs
+        - gnome-font-viewer
+        - gnome-shell-extension-blur-my-shell
+        - gnome-shell-extension-gsconnect
+        - nautilus-gsconnect
+
   - from-file: common.yml

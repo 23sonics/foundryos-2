@@ -22,6 +22,7 @@ modules:
         - kontact
         - kcalc
         - kolourpaint
+        - okular
     replace:
       - from-repo: updates
         packages:

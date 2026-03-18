@@ -24,7 +24,6 @@ modules:
         - ffmpeg
         - yt-dlp
         - virt-manager
-        - kolourpaint
         - ckb-next
         - mediawriter
 
