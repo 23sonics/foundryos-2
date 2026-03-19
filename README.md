@@ -4,13 +4,13 @@
 
 ## Installation
 > [!WARNING]
-> I will not provide support for this image to anyone other than myself. If you want to try to install this image anyway, proceed at your own risk.
+> I will not provide support for these images to anyone other than myself. If you want to try to install this image anyway, proceed at your own risk.
 
 ### On the topic of ISOs
-I will *never* host any ISOs as I don't have the resources to do this for an image that's made for my own personal use anyway. Despite this, existing experienced Linux users may try following [BlueBuild's own guide](https://blue-build.org/how-to/generate-iso/) on how to generate an ISO, although this is not guaranteed to work properly
+I will *never* host any ISOs as I don't have the resources to do this for images made for my own personal use anyway. Despite this, existing experienced Linux users may try following [BlueBuild's own guide](https://blue-build.org/how-to/generate-iso/) on how to generate an ISO, although this is not guaranteed to work properly
 
 ### Rebasing an existing installation
-If you already use Fedora Kinoite or a derivative, you could try to rebase your system. The specific method depends on your setup but the following steps should work for those using `rpm-ostree` (adapted from [BlueBuild's guide](https://blue-build.org/learn/universal-blue/#by-rebasing-from-an-existing-installation-of-fedora-atomic-or-a-derivative) (again))
+If you already use Fedora Silverblue or Kinoite, or a derivative of one, you could try to rebase your system. The specific method depends on your setup but the following steps should work for those using `rpm-ostree` (adapted from [BlueBuild's guide](https://blue-build.org/learn/universal-blue/#by-rebasing-from-an-existing-installation-of-fedora-atomic-or-a-derivative) (again))
 
 Start by rebasing to an unsigned image, replace `[variant]` with `2` for Plasma or `gnome` for GNOME...
 ```

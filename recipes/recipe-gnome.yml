@@ -28,6 +28,7 @@ modules:
         - gnome-text-editor
         - gnome-connections
         - gnome-extensions-app
+        - gnome-tweaks
         - gnome-logs
         - gnome-font-viewer
         - gnome-shell-extension-blur-my-shell
