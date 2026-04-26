@@ -16,7 +16,6 @@ modules:
     install:
       packages:
         - webkit2gtk4.1
-        - audacious
         - libburn
         - cdrskin
         - k3b
