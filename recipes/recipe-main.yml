@@ -23,11 +23,5 @@ modules:
         - kcalc
         - kolourpaint
         - okular
-    replace:
-      - from-repo: updates
-        packages:
-          - old: sddm
-            new: plasma-login-manager
-        allow-erasing: true
 
   - from-file: common.yml
