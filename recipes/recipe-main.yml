@@ -5,7 +5,7 @@ name: foundryos-2
 description: customised Fedora Atomic image for my own personal use (main Plasma variant)
 
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 43
+image-version: 44
 
 modules:
   - type: files
