@@ -23,5 +23,6 @@ modules:
         - kcalc
         - kolourpaint
         - okular
+        - virt-manager
 
   - from-file: common.yml

@@ -22,7 +22,6 @@ modules:
         - steam
         - ffmpeg
         - yt-dlp
-        - virt-manager
         - ckb-next
         - mediawriter
 
