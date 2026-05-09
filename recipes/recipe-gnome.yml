@@ -22,6 +22,7 @@ modules:
         - gnome-calculator
         - loupe
         - baobab
+        - snapshot
         - gnome-clocks
         - gnome-maps
         - gnome-calendar
