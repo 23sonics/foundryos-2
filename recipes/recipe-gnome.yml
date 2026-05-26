@@ -33,6 +33,7 @@ modules:
         - gnome-calendar
         - gnome-contacts
         - gnome-text-editor
+        - gnome-characters
         - gnome-connections
         - gnome-extensions-app
         - gnome-tweaks

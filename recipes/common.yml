@@ -15,6 +15,7 @@ modules:
       nonfree: negativo17
     install:
       packages:
+        - libreoffice
         - webkit2gtk4.1
         - libburn
         - cdrskin
