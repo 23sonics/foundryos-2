@@ -23,7 +23,7 @@ modules:
         - steam
         - ffmpeg
         - yt-dlp
-        - ckb-next
+        - waydroid
         - mediawriter
 
 # no need for this package at this time
