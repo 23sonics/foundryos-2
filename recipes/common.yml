@@ -25,6 +25,7 @@ modules:
         - yt-dlp
         - waydroid
         - mediawriter
+        - lzip
 
 # no need for this package at this time
 #  - type: dnf
