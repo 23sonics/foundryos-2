@@ -27,6 +27,20 @@ modules:
         - mediawriter
         - lzip
 
+  # Docker
+  - type: dnf
+    repos:
+      files:
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+      cleanup: true
+    install:
+      packages:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+
 # no need for this package at this time
 #  - type: dnf
 #    install:
